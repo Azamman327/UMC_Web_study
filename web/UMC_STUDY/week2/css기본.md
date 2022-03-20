@@ -57,3 +57,17 @@ _마우스를 div태그 객체 위에 올리면 배경색이 green으로 변합�
 - 이 외에 다른 가상 선택자들
   - active : 마우스로 클릭하고 있으면 실행
   - focus : input태그에서 사용 가능, 한 번 클릭하면 실행됨
+
+## 2-3 properties
+<b><html 요소의 분류></b>
+- html 태그는 두 종류로 나뉜다.
+   * block-element : 요소 크기에 상관 없이 한 줄을 통째로 차지하는 태그(ex)p, div, ul)
+   * inline-element : 요소 크기만큼 차지하는 태그(ex)span, a, img)
+- display 속성으로 block, inline을 설정해 줄 수 있다 => p태그를 inline-element처럼 가능
+   * none : 공간 차지 X
+   * inline : 요소 크기만큼 차지
+   * block : 한 줄 차지
+
+<br><br>
+   
+<b>box model</b>
