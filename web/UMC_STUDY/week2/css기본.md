@@ -66,8 +66,33 @@ _마우스를 div태그 객체 위에 올리면 배경색이 green으로 변합�
 - display 속성으로 block, inline을 설정해 줄 수 있다 => p태그를 inline-element처럼 가능
    * none : 공간 차지 X
    * inline : 요소 크기만큼 차지
-   * block : 한 줄 차지
-
+   * block : 한 줄 차지    
 <br><br>
    
-<b>box model</b>
+<b><박스 모델(box model)></b><br><br>
+<img src="https://user-images.githubusercontent.com/77380889/159197282-5606a84d-b9ea-48d4-a0c5-bcdf5dde8768.png" />
+- padding : 테두리와 내용 사시의 간격
+- border : 테두리
+- margin : 테두리부터 다른 요소와의 간격
+- 1, 2, 4 개의 값을 지정해 줄 수 있다.
+   * 1개 : 상하좌우px값
+   * 2개 : 첫번째 값은 상하, 두번째 값은 좌우
+   * 4개 : top, right, bottom, left 순서
+- border : 5px solid blue(두께, 스타일, 색상 지정 가능)
+- border-top-width : 이런 시긍로 하면 하나의 테두리에만에도 설정 가능
+- 모든 태그 선택자 : *
+- box-sizing : content-box | border-box | initial | inherit
+   * 무엇을 기준으로 box의 사이즈를 정할 것인가
+   * content-box : content영역
+   * border-box : 테두리 기준
+   * initial : 기본값
+   * inherit : 부모 요소의 속성값
+   
+- 태그도 포함관계 있음
+   * ex)
+   ```
+   div span {
+      ...
+   }
+   ```
+   div 태그에 포함되어있는 span 태그를 가리킴
