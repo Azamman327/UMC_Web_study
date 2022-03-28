@@ -21,34 +21,51 @@
 # 실습 체크리스트✅
 
 - 변수, 자료형
-    - [ ]  const :
-    - [ ]  let :
-    - [ ]  string :
-    - [ ]  boolean :
-    - [ ]  undefined :
-    - [ ]  null :
+    - [ ]  const : 변하지 않는 변수를 선언할 때 사용
+    - [ ]  let : 변하는 값을 가지는 변수 선언 시 사용
+    - [ ]  string : 문자열 변수 자료형
+    - [ ]  boolean : true, false값을 가지는 자료형
+    - [ ]  undefined : 값이 없음.(시스템에서 자동적으로 설정되는 값) ex)함수 값을 리턴 안했을 때
+    - [ ]  null : 값이 없음.(수동적으로 설정되는 값) ex)사용자가 직접 null입력
 - 배열
-    - [ ]  push :
-    - [ ]  unshift :
-    - [ ]  splice :
-    - [ ]  pop :
-    - [ ]  shift :
+    - [ ]  push : 배열 뒤에 값 추가, 새로운 배열의 길이를 반환
+    - [ ]  unshift : 배열 앞에 값 추가, 새로운 배열의 길이를 반환
+    - [ ]  splice : 배열 중간(원하는 인덱스부터)값 추가 혹은 삭제(시작인덱스, 삭제할 갯수, 추가할 원소들)
+    - [ ]  pop : 배열 맨 뒤 값 삭제, 반환
+    - [ ]  shift : 배열 맨 앞 값 삭제, 반환
 - 객체
-    - [ ]  배열과 객체의 차이 :
-    - [ ]  생성자 함수 :
+    - [ ]  배열과 객체의 차이 : 배열은 단순 데이터의 나열같은것, 객체는 categories? 뭐라 해야할 지.... 쉽게 말하면 각 객체의 property값을 찾는 것이
+            배열보다 유리하다. c언어의 구조체느낌
+    - [ ]  생성자 함수 : 객체를 찍어내는 틀같은 역할, 구조체의 기본 형식을 정해두고 필요로 하는 매개변수 대입하면 객체가 생성된다.
 - 함수
-    - [ ]  function :
-    - [ ]  arrow function :
+    - [ ]  function : 이건 함수다. 를 알려주는...., 일을 수행하는 덩어리?
+    - [ ]  arrow function : function을 단순화한 형태, const 함수명 = (매개변수) =>
+            주로 콜백함수나 한줄짜리 간단한 함수에 많이 쓰인다.
 - 조건문
-    - [ ]  if문이 거짓으로 판단하는 값 :
-    - [ ]  삼항연산자 :
-    - [ ]  if, else if, else문과 switch문의 차이 :
+    - [ ]  if문이 거짓으로 판단하는 값 : false, NaN, null, '', 0, undefined......
+    - [ ]  삼항연산자 : 참거짓판단식 ? true일때 : false일때
+    - [ ]  if, else if, else문과 switch문의 차이 : if는 한 가지 조건문에, else if는 2개 이상 가능, switch의 경우 조건문이 올 수 없고 변수와 case로 이루어짐.
 - 반복문
     - [ ]  for문과 while문을 사용하여 아래 배열의 index값들을 각 10씩 더한 반복문을 작성해주세요.
     
     ```
     const numArr = [77, 81, 12, 34, 51, 20];
     
+    //for 문
+    for (let i = 0; i < numArr.length; i++)
+        numArr[i] += 10;
+    
+    //while 문
+    let i = 0;
+    while (i < numArr.length)
+        numArr[i++] += 10;
+        
+    //혹은
+    let i = 0;
+    while (i < numArr.length) {
+        numArr[i] += 10;
+        i++;
+    }
     ```
     
 
